@@ -19,6 +19,6 @@
 	* ~~display cartItems~~
 	* ~~deleteFromCart~~
 6. ~~Logout~~
-7. Design
-	* TableCell alignment
+7. ~~Design~~
+	* ~~TableCell alignment~~
 	* ~~add Logo~~

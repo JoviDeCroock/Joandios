@@ -62,6 +62,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.textLabel?.text = product.name
             let image = try UIImage(data: Data(contentsOf: url!))
             cell.imageView?.image = image
+            cell.textLabel?.textAlignment = .right
         }catch{
             print("error")
         }
