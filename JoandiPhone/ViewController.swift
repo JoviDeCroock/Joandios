@@ -41,6 +41,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         super.viewDidLoad()
+        self.tableView.backgroundColor = UIColor(colorLiteralRed: 72.0/255, green: 67.0/255, blue: 77.0/255, alpha: 1.0)
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.tableView.separatorInset = UIEdgeInsets.zero
     }
@@ -56,6 +57,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let product = products[indexPath.row]
         let url = URL(string: "http://188.166.173.147:3000/" + self.products[indexPath.row].image)
         do{
+            cell.backgroundColor = UIColor(colorLiteralRed: 72.0/255, green: 67.0/255, blue: 77.0/255, alpha: 1.0)
             cell.textLabel?.text = product.name
             let image = try UIImage(data: Data(contentsOf: url!))
             cell.imageView?.image = image
@@ -70,31 +72,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     {
         let product = products[indexPath.row]
         detailWanted = product
-        performSegue(withIdentifier: "productDetailView", sender: self)
+        performSegue(withIdentifier: "proView", sender: self)
     }
     
     /*PASS PRODUCT TO NEW VIEWCONTROLLER*/
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "productDetailView"){
+        if(segue.identifier == "proView"){
             let viewController = segue.destination as! ProductViewController
             viewController.product = detailWanted
         }
     }
     
     /*DELETE KEYS SO USER DOESNT GET REMEMBERED*/
-    func logout(){
+    @IBAction func logOutTap(_ sender: Any) {
         UserDefaults.standard.removeObject(forKey: "token")
         UserDefaults.standard.removeObject(forKey: "id")
+        self.dismiss(animated: true, completion: nil)
     }
     
     /*ALERTS*/
     func displayAlert(msg:String){
         let alert = UIAlertController(title:"Error", message: msg, preferredStyle: UIAlertControllerStyle.alert)
-        
         let action = UIAlertAction(title: "ok", style: UIAlertActionStyle.default, handler:nil)
-        
         alert.addAction(action)
-        
         self.present(alert, animated:true, completion:nil)
     }
 }

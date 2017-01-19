@@ -10,10 +10,9 @@
 3. ~~getProducts~~
 	* ~~In tableview~~
 	* ~~Redirect to detail~~
-4. make DetailProduct
-	* AddToCart
+4. ~~make DetailProduct~~
+	* ~~AddToCart~~
 5. DisplayCart
-	* ChangeAmounts
 6. Design
 	* TableCell alignment
 	* add Logo
