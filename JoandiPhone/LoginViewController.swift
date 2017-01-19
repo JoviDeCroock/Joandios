@@ -16,8 +16,10 @@ class LoginViewController: UIViewController{
 
     override func viewDidLoad()
     {
+        /*TESTING*/
         UserDefaults.standard.removeObject(forKey: "token")
         UserDefaults.standard.removeObject(forKey: "id")
+        /*IF USER IS LOGGED IN STAY LOGGED IN*/
         if (UserDefaults.standard.value(forKey: "token") as? NSString) != nil{
             self.performSegue(withIdentifier: "shopView", sender: self)
         }
@@ -27,6 +29,7 @@ class LoginViewController: UIViewController{
         let email = emailuser.text!
         let password = passwordUser.text!
         
+        /*VALIDATION*/
         if(email.isEmpty || password.isEmpty){
             displayAlert(msg: "Fill in all fields!")
             return
@@ -36,6 +39,7 @@ class LoginViewController: UIViewController{
             "username": email,
             "password": password
         ]
+        /*LOGINREQUEST WITH SETTING DEFAULTS*/
         Alamofire.request("http://188.166.173.147:3000/login", method: .post, parameters: params, encoding: JSONEncoding.default).responseJSON{
             response in switch response.result{
                 case.success(let data):
@@ -52,13 +56,11 @@ class LoginViewController: UIViewController{
         }
     }
     
+    /*ALERTS*/
     func displayAlert(msg:String){
         let alert = UIAlertController(title:"Error", message: msg, preferredStyle: UIAlertControllerStyle.alert)
-        
         let action = UIAlertAction(title: "ok", style: UIAlertActionStyle.default, handler:nil)
-        
         alert.addAction(action)
-        
         self.present(alert, animated:true, completion:nil)
     }
 }

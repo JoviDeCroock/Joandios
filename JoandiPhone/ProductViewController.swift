@@ -16,9 +16,5 @@ class ProductViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var x = product
-        /*title = parkingLot.name
-        availableCapacityLabel.text = "Available: \(parkingLot.availableCapacity)"
-        capacityLabel.text = "Available: \(parkingLot.capacity)"*/
     }
 }

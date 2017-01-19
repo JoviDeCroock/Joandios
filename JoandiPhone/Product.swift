@@ -16,7 +16,7 @@ class Product: NSObject {
     let descrip: String
     let image: String
     let category:Category
-    
+    /*CONSTRUCTOR WITHOUT API*/
     init(name: String, price: Double, descrip: String, image: String, category: Category, id: String){
         self.id = id
         self.name = name
@@ -25,7 +25,7 @@ class Product: NSObject {
         self.image = image
         self.category = category
     }
-    
+    /*API CONSTRUCTOR*/
     required init(json: JSON){
         let cat = Category(name:"Eik")
         self.name = json["name"].stringValue
@@ -36,6 +36,7 @@ class Product: NSObject {
         self.category = cat
     }
     
+    /*TEST WITHOUT REST API*/
     static func sample() ->[Product]{
         let cat = Category(name:"Eik")
         let bestProduct = Product(name: "Eiken Tafel", price: 5, descrip: "iets", image: "tafel.jpg", category: cat, id:"x")

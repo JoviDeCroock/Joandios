@@ -26,6 +26,7 @@ class RegisterViewController: UIViewController{
         let password = passwordUser.text!
         let confirm = confirmUser.text!
         
+        /*VALIDATION*/
         if(email.isEmpty || password.isEmpty || confirm.isEmpty){
             displayAlert(msg: "Fill in all fields!")
             return
@@ -38,11 +39,15 @@ class RegisterViewController: UIViewController{
             "username": email,
             "password": password
         ]
+        /*REGISTER REQUEST ALSO SETS USERDEFAULTS*/
         Alamofire.request("http://188.166.173.147:3000/register", method: .post, parameters: params, encoding: JSONEncoding.default).responseJSON{
             response in switch response.result{
-            case.success:
-                let json = response.result.value
-                UserDefaults.standard.setValue(json, forKey: "token")
+            case.success(let data):
+                let json = JSON(data)
+                let token = json["token"].stringValue
+                let id = json["id"].stringValue
+                UserDefaults.standard.setValue(token, forKey: "token")
+                UserDefaults.standard.setValue(id, forKey: "id")
                 UserDefaults.standard.synchronize()
                 self.performSegue(withIdentifier: "shopView", sender: self)
             case.failure:
@@ -52,15 +57,16 @@ class RegisterViewController: UIViewController{
 
     }
     
+    /*PRESENT MODALLY SO CAN BE DISMISSED BACK TO LOGIN*/
     @IBAction func loginTap(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
+    /*ALERTS*/
     func displayAlert(msg:String){
         let alert = UIAlertController(title:"Error", message: msg, preferredStyle: UIAlertControllerStyle.alert)
         let action = UIAlertAction(title: "ok", style: UIAlertActionStyle.default, handler:nil)
         alert.addAction(action)
-    
         self.present(alert, animated:true, completion:nil)
     }
 }

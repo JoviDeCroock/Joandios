@@ -10,7 +10,6 @@
 		980458F71E2E592B00160645 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980458F61E2E592B00160645 /* RegisterViewController.swift */; };
 		980E8BE61E2FF05500ECB77D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980E8BE51E2FF05500ECB77D /* ProfileViewController.swift */; };
 		980E8BE81E2FF54000ECB77D /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980E8BE71E2FF54000ECB77D /* ProductViewController.swift */; };
-		980E8BEB1E2FF5EC00ECB77D /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980E8BEA1E2FF5EC00ECB77D /* ProductCell.swift */; };
 		9862ECA81E198792000E5B28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9862ECA71E198792000E5B28 /* ViewController.swift */; };
 		98A0022B1E19C68400260D64 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A0022A1E19C68400260D64 /* LoginViewController.swift */; };
 		98A823EA1E2E5BB500C79210 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98A823E91E2E5BB500C79210 /* main.storyboard */; };
@@ -46,7 +45,6 @@
 		980458F61E2E592B00160645 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		980E8BE51E2FF05500ECB77D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		980E8BE71E2FF54000ECB77D /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
-		980E8BEA1E2FF5EC00ECB77D /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		9862ECA71E198792000E5B28 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98A0022A1E19C68400260D64 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		98A823E91E2E5BB500C79210 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
@@ -106,14 +104,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		980E8BE91E2FF5E100ECB77D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				980E8BEA1E2FF5EC00ECB77D /* ProductCell.swift */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
 		98C78EFD1E16B88B004A0688 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +148,6 @@
 		A86035C81DF839DF00579CC0 /* JoandiPhone */ = {
 			isa = PBXGroup;
 			children = (
-				980E8BE91E2FF5E100ECB77D /* Views */,
 				98C78F071E16B973004A0688 /* ViewControllers */,
 				98C78EFD1E16B88B004A0688 /* Model */,
 				A86035C91DF839DF00579CC0 /* AppDelegate.swift */,
@@ -363,7 +352,6 @@
 				A86035CA1DF839DF00579CC0 /* AppDelegate.swift in Sources */,
 				980E8BE61E2FF05500ECB77D /* ProfileViewController.swift in Sources */,
 				98A0022B1E19C68400260D64 /* LoginViewController.swift in Sources */,
-				980E8BEB1E2FF5EC00ECB77D /* ProductCell.swift in Sources */,
 				980E8BE81E2FF54000ECB77D /* ProductViewController.swift in Sources */,
 				98C78F0B1E16BC99004A0688 /* Category.swift in Sources */,
 			);

@@ -15,18 +15,18 @@ class ProfileViewController: UIViewController{
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        /*FETCH ID FROM DEFAULTS*/
         let id = UserDefaults.standard.value(forKey: "id") as! String
+        /*REQUEST FOR USER*/
         let url = URL(string: "http://188.166.173.147:3000/shop/getUser/" + id)
         Alamofire.request(url!, method: .get).responseJSON{
-         response in switch response.result{
-         case.success(let data):
-         let json = JSON(data)
-         //self.products = data
-         print(json)
-         case.failure:
-         print("error")
-         }
-         }
+            response in switch response.result{
+                case.success(let data):
+                    let json = JSON(data)
+                    print(json)
+                case.failure:
+                    print("error")
+            }
+        }
     }
-
 }

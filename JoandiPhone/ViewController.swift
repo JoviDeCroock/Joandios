@@ -18,8 +18,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad()
     {
+        /*AVOID THE 304*/
         URLCache.shared.removeAllCachedResponses()
+        /*FILL PRODUCTS WITHOUT API*/
         //products = Product.sample()
+        /*FILL PRODUCTS WITH API*/
         Alamofire.request("http://188.166.173.147:3000/shop/getAllProducts", method: .get).responseJSON{
             response in switch response.result{
             case.success(let data):
@@ -28,6 +31,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     let x = Product(json: object)
                     self.products.append(x)
                 }
+                /*ASYNC REFRESH AFTER PRODUCTS ARE FILLED SINCE URLTASK DOESNT WORK WITH ALAMOFIRE*/
                 DispatchQueue.main.async{
                     self.tableView.reloadData()
                 }
@@ -41,14 +45,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.separatorInset = UIEdgeInsets.zero
     }
     
-    func getProducts() -> Void{
-        
-    }
-    
+    /*ROWS*/
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.products.count
     }
     
+    /*BIND CELLS*/
     internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let product = products[indexPath.row]
@@ -63,6 +65,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    /*CLICK CELL*/
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         let product = products[indexPath.row]
@@ -70,21 +73,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         performSegue(withIdentifier: "productDetailView", sender: self)
     }
     
+    /*PASS PRODUCT TO NEW VIEWCONTROLLER*/
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "productDetailView"){
             let viewController = segue.destination as! ProductViewController
             viewController.product = detailWanted
         }
     }
+    
+    /*DELETE KEYS SO USER DOESNT GET REMEMBERED*/
     func logout(){
         UserDefaults.standard.removeObject(forKey: "token")
         UserDefaults.standard.removeObject(forKey: "id")
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
+    /*ALERTS*/
     func displayAlert(msg:String){
         let alert = UIAlertController(title:"Error", message: msg, preferredStyle: UIAlertControllerStyle.alert)
         
