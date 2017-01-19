@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		980458F71E2E592B00160645 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980458F61E2E592B00160645 /* RegisterViewController.swift */; };
+		980E8BE61E2FF05500ECB77D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980E8BE51E2FF05500ECB77D /* ProfileViewController.swift */; };
+		980E8BE81E2FF54000ECB77D /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980E8BE71E2FF54000ECB77D /* ProductViewController.swift */; };
+		980E8BEB1E2FF5EC00ECB77D /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980E8BEA1E2FF5EC00ECB77D /* ProductCell.swift */; };
+		9862ECA81E198792000E5B28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9862ECA71E198792000E5B28 /* ViewController.swift */; };
+		98A0022B1E19C68400260D64 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A0022A1E19C68400260D64 /* LoginViewController.swift */; };
+		98A823EA1E2E5BB500C79210 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98A823E91E2E5BB500C79210 /* main.storyboard */; };
+		98C78F061E16B8FA004A0688 /* Properties.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98C78F051E16B8FA004A0688 /* Properties.plist */; };
+		98C78F091E16BBDE004A0688 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C78F081E16BBDE004A0688 /* Product.swift */; };
+		98C78F0B1E16BC99004A0688 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C78F0A1E16BC99004A0688 /* Category.swift */; };
+		A5DDF556D8EB32031D7336DD /* Pods_JoandiPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F4A4713375BC52DD590FA2 /* Pods_JoandiPhone.framework */; };
 		A86035CA1DF839DF00579CC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86035C91DF839DF00579CC0 /* AppDelegate.swift */; };
-		A86035CC1DF839DF00579CC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86035CB1DF839DF00579CC0 /* ViewController.swift */; };
-		A86035CF1DF839DF00579CC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A86035CD1DF839DF00579CC0 /* Main.storyboard */; };
 		A86035D11DF839DF00579CC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A86035D01DF839DF00579CC0 /* Assets.xcassets */; };
 		A86035D41DF839DF00579CC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A86035D21DF839DF00579CC0 /* LaunchScreen.storyboard */; };
-		A86035F91DF83AA600579CC0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86035F81DF83AA600579CC0 /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +41,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33F4A4713375BC52DD590FA2 /* Pods_JoandiPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JoandiPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A956F8CE5FC7A4F45B0D566 /* Pods-JoandiPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoandiPhone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JoandiPhone/Pods-JoandiPhone.debug.xcconfig"; sourceTree = "<group>"; };
+		980458F61E2E592B00160645 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		980E8BE51E2FF05500ECB77D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		980E8BE71E2FF54000ECB77D /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		980E8BEA1E2FF5EC00ECB77D /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		9862ECA71E198792000E5B28 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98A0022A1E19C68400260D64 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		98A823E91E2E5BB500C79210 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		98C78F051E16B8FA004A0688 /* Properties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Properties.plist; sourceTree = "<group>"; };
+		98C78F081E16BBDE004A0688 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		98C78F0A1E16BC99004A0688 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		A86035C61DF839DF00579CC0 /* JoandiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoandiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86035C91DF839DF00579CC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A86035CB1DF839DF00579CC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A86035CE1DF839DF00579CC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A86035D01DF839DF00579CC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A86035D31DF839DF00579CC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A86035D51DF839DF00579CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A86035DA1DF839DF00579CC0 /* JoandiPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoandiPhoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86035E51DF839E000579CC0 /* JoandiPhoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoandiPhoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A86035F81DF83AA600579CC0 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		B2D0F8DF414F061B93CBAAC8 /* Pods-JoandiPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoandiPhone.release.xcconfig"; path = "Pods/Target Support Files/Pods-JoandiPhone/Pods-JoandiPhone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5DDF556D8EB32031D7336DD /* Pods_JoandiPhone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,11 +89,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19DB33BF922CEFD9E1FDC62E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A956F8CE5FC7A4F45B0D566 /* Pods-JoandiPhone.debug.xcconfig */,
+				B2D0F8DF414F061B93CBAAC8 /* Pods-JoandiPhone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2F5160D4E655E39D0881D2E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33F4A4713375BC52DD590FA2 /* Pods_JoandiPhone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		980E8BE91E2FF5E100ECB77D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				980E8BEA1E2FF5EC00ECB77D /* ProductCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		98C78EFD1E16B88B004A0688 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				98C78F081E16BBDE004A0688 /* Product.swift */,
+				98C78F0A1E16BC99004A0688 /* Category.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		98C78F071E16B973004A0688 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9862ECA71E198792000E5B28 /* ViewController.swift */,
+				98A0022A1E19C68400260D64 /* LoginViewController.swift */,
+				980458F61E2E592B00160645 /* RegisterViewController.swift */,
+				980E8BE51E2FF05500ECB77D /* ProfileViewController.swift */,
+				980E8BE71E2FF54000ECB77D /* ProductViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		A86035BD1DF839DF00579CC0 = {
 			isa = PBXGroup;
 			children = (
 				A86035C81DF839DF00579CC0 /* JoandiPhone */,
 				A86035C71DF839DF00579CC0 /* Products */,
+				19DB33BF922CEFD9E1FDC62E /* Pods */,
+				2F5160D4E655E39D0881D2E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,24 +158,17 @@
 		A86035C81DF839DF00579CC0 /* JoandiPhone */ = {
 			isa = PBXGroup;
 			children = (
-				A86035F71DF83A7600579CC0 /* ViewModels */,
+				980E8BE91E2FF5E100ECB77D /* Views */,
+				98C78F071E16B973004A0688 /* ViewControllers */,
+				98C78EFD1E16B88B004A0688 /* Model */,
 				A86035C91DF839DF00579CC0 /* AppDelegate.swift */,
-				A86035CB1DF839DF00579CC0 /* ViewController.swift */,
-				A86035CD1DF839DF00579CC0 /* Main.storyboard */,
 				A86035D01DF839DF00579CC0 /* Assets.xcassets */,
 				A86035D21DF839DF00579CC0 /* LaunchScreen.storyboard */,
 				A86035D51DF839DF00579CC0 /* Info.plist */,
+				98C78F051E16B8FA004A0688 /* Properties.plist */,
+				98A823E91E2E5BB500C79210 /* main.storyboard */,
 			);
 			path = JoandiPhone;
-			sourceTree = "<group>";
-		};
-		A86035F71DF83A7600579CC0 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				A86035F81DF83AA600579CC0 /* LoginController.swift */,
-			);
-			name = ViewModels;
-			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A86035EE1DF839E000579CC0 /* Build configuration list for PBXNativeTarget "JoandiPhone" */;
 			buildPhases = (
+				DC93CFCDC83098C9B44A4806 /* [CP] Check Pods Manifest.lock */,
 				A86035C21DF839DF00579CC0 /* Sources */,
 				A86035C31DF839DF00579CC0 /* Frameworks */,
 				A86035C41DF839DF00579CC0 /* Resources */,
+				5A0F94A56D3EC00B3315FB3B /* [CP] Embed Pods Frameworks */,
+				EA65708B06C0B60918DFA5BB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,7 +237,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Jovi;
 				TargetAttributes = {
 					A86035C51DF839DF00579CC0 = {
@@ -218,9 +281,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98A823EA1E2E5BB500C79210 /* main.storyboard in Resources */,
 				A86035D41DF839DF00579CC0 /* LaunchScreen.storyboard in Resources */,
 				A86035D11DF839DF00579CC0 /* Assets.xcassets in Resources */,
-				A86035CF1DF839DF00579CC0 /* Main.storyboard in Resources */,
+				98C78F061E16B8FA004A0688 /* Properties.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,14 +304,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A0F94A56D3EC00B3315FB3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JoandiPhone/Pods-JoandiPhone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC93CFCDC83098C9B44A4806 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA65708B06C0B60918DFA5BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JoandiPhone/Pods-JoandiPhone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A86035C21DF839DF00579CC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A86035CC1DF839DF00579CC0 /* ViewController.swift in Sources */,
-				A86035F91DF83AA600579CC0 /* LoginController.swift in Sources */,
+				9862ECA81E198792000E5B28 /* ViewController.swift in Sources */,
+				980458F71E2E592B00160645 /* RegisterViewController.swift in Sources */,
+				98C78F091E16BBDE004A0688 /* Product.swift in Sources */,
 				A86035CA1DF839DF00579CC0 /* AppDelegate.swift in Sources */,
+				980E8BE61E2FF05500ECB77D /* ProfileViewController.swift in Sources */,
+				98A0022B1E19C68400260D64 /* LoginViewController.swift in Sources */,
+				980E8BEB1E2FF5EC00ECB77D /* ProductCell.swift in Sources */,
+				980E8BE81E2FF54000ECB77D /* ProductViewController.swift in Sources */,
+				98C78F0B1E16BC99004A0688 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +399,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A86035CD1DF839DF00579CC0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A86035CE1DF839DF00579CC0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A86035D21DF839DF00579CC0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -318,6 +428,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -368,6 +479,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -395,7 +507,9 @@
 		};
 		A86035EF1DF839E000579CC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A956F8CE5FC7A4F45B0D566 /* Pods-JoandiPhone.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JoandiPhone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -407,7 +521,9 @@
 		};
 		A86035F01DF839E000579CC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2D0F8DF414F061B93CBAAC8 /* Pods-JoandiPhone.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JoandiPhone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -490,6 +606,7 @@
 				A86035F01DF839E000579CC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A86035F11DF839E000579CC0 /* Build configuration list for PBXNativeTarget "JoandiPhoneTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +615,7 @@
 				A86035F31DF839E000579CC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A86035F41DF839E000579CC0 /* Build configuration list for PBXNativeTarget "JoandiPhoneUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +624,7 @@
 				A86035F61DF839E000579CC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
