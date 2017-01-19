@@ -22,6 +22,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         URLCache.shared.removeAllCachedResponses()
         /*FILL PRODUCTS WITHOUT API*/
         //products = Product.sample()
+        
         /*FILL PRODUCTS WITH API*/
         Alamofire.request("http://188.166.173.147:3000/shop/getAllProducts", method: .get).responseJSON{
             response in switch response.result{

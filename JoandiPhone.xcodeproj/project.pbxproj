@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		980458F71E2E592B00160645 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980458F61E2E592B00160645 /* RegisterViewController.swift */; };
 		980502611E311541000C2E9E /* logout-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 980502601E311541000C2E9E /* logout-512.png */; };
+		980DCEDE1E3171BA0012BE4D /* joandi.png in Resources */ = {isa = PBXBuildFile; fileRef = 980DCEDD1E3171BA0012BE4D /* joandi.png */; };
 		980E8BE61E2FF05500ECB77D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980E8BE51E2FF05500ECB77D /* ProfileViewController.swift */; };
 		980E8BE81E2FF54000ECB77D /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980E8BE71E2FF54000ECB77D /* ProductViewController.swift */; };
+		9813818C1E3169B400EF90B1 /* cartProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9813818B1E3169B400EF90B1 /* cartProduct.swift */; };
 		9820670B1E311EAF00FC8732 /* Add_to_Cart-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 9820670A1E311EAF00FC8732 /* Add_to_Cart-512.png */; };
 		9862ECA81E198792000E5B28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9862ECA71E198792000E5B28 /* ViewController.swift */; };
 		98A0022B1E19C68400260D64 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A0022A1E19C68400260D64 /* LoginViewController.swift */; };
@@ -46,8 +48,10 @@
 		6A956F8CE5FC7A4F45B0D566 /* Pods-JoandiPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoandiPhone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JoandiPhone/Pods-JoandiPhone.debug.xcconfig"; sourceTree = "<group>"; };
 		980458F61E2E592B00160645 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		980502601E311541000C2E9E /* logout-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logout-512.png"; sourceTree = "<group>"; };
+		980DCEDD1E3171BA0012BE4D /* joandi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joandi.png; sourceTree = "<group>"; };
 		980E8BE51E2FF05500ECB77D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		980E8BE71E2FF54000ECB77D /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		9813818B1E3169B400EF90B1 /* cartProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cartProduct.swift; sourceTree = "<group>"; };
 		9820670A1E311EAF00FC8732 /* Add_to_Cart-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Add_to_Cart-512.png"; sourceTree = "<group>"; };
 		9862ECA71E198792000E5B28 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98A0022A1E19C68400260D64 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 		9805025F1E31152E000C2E9E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				980DCEDD1E3171BA0012BE4D /* joandi.png */,
 				9820670A1E311EAF00FC8732 /* Add_to_Cart-512.png */,
 				980502601E311541000C2E9E /* logout-512.png */,
 			);
@@ -122,6 +127,7 @@
 			children = (
 				98C78F081E16BBDE004A0688 /* Product.swift */,
 				98C78F0A1E16BC99004A0688 /* Category.swift */,
+				9813818B1E3169B400EF90B1 /* cartProduct.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -290,6 +296,7 @@
 				A86035D11DF839DF00579CC0 /* Assets.xcassets in Resources */,
 				98C78F061E16B8FA004A0688 /* Properties.plist in Resources */,
 				9820670B1E311EAF00FC8732 /* Add_to_Cart-512.png in Resources */,
+				980DCEDE1E3171BA0012BE4D /* joandi.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9862ECA81E198792000E5B28 /* ViewController.swift in Sources */,
+				9813818C1E3169B400EF90B1 /* cartProduct.swift in Sources */,
 				980458F71E2E592B00160645 /* RegisterViewController.swift in Sources */,
 				98C78F091E16BBDE004A0688 /* Product.swift in Sources */,
 				A86035CA1DF839DF00579CC0 /* AppDelegate.swift in Sources */,
