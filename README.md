@@ -13,6 +13,8 @@
 4. ~~make DetailProduct~~
 	* ~~AddToCart~~
 5. DisplayCart
-6. Design
+    * deleteFromCart
+6. ~~Logout~~
+7. Design
 	* TableCell alignment
 	* add Logo
