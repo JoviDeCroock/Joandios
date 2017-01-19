@@ -14,6 +14,7 @@
 	* AddToCart
 5. DisplayCart
 	* ChangeAmounts
-6. Design
+6. Logout
+7. Design
 	* TableCell alignment
 	* add Logo
