@@ -54,7 +54,7 @@ class ProductViewController: UIViewController{
             case.success:
                 self.dismiss(animated: true, completion: nil)
             case.failure:
-                self.displayAlert(msg: "Bad token")
+                self.displayAlert(msg: "Incorrecte token, probeer opnieuw aan te melden.")
             }
         }
     }

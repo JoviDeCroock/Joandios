@@ -60,6 +60,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         do{
             cell.backgroundColor = UIColor(colorLiteralRed: 72.0/255, green: 67.0/255, blue: 77.0/255, alpha: 1.0)
             cell.textLabel?.text = product.name + " \(product.price) Euro"
+            cell.textLabel?.textColor = UIColor.white
             let image = try UIImage(data: Data(contentsOf: url!))
             cell.imageView?.image = image
             cell.textLabel?.textAlignment = .center

@@ -28,10 +28,10 @@ class RegisterViewController: UIViewController{
         
         /*VALIDATION*/
         if(email.isEmpty || password.isEmpty || confirm.isEmpty){
-            displayAlert(msg: "Fill in all fields!")
+            displayAlert(msg: "Vul alle velden in.")
             return
         }else if(password != confirm){
-            displayAlert(msg: "Your passwords don't match")
+            displayAlert(msg: "De twee paswoorden zijn niet hetzelfde.")
             return
         }
         

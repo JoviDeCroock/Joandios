@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		980458F71E2E592B00160645 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980458F61E2E592B00160645 /* RegisterViewController.swift */; };
-		980502611E311541000C2E9E /* logout-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 980502601E311541000C2E9E /* logout-512.png */; };
 		980DCEDE1E3171BA0012BE4D /* joandi.png in Resources */ = {isa = PBXBuildFile; fileRef = 980DCEDD1E3171BA0012BE4D /* joandi.png */; };
 		980E8BE61E2FF05500ECB77D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980E8BE51E2FF05500ECB77D /* ProfileViewController.swift */; };
 		980E8BE81E2FF54000ECB77D /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980E8BE71E2FF54000ECB77D /* ProductViewController.swift */; };
@@ -47,7 +46,6 @@
 		33F4A4713375BC52DD590FA2 /* Pods_JoandiPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JoandiPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A956F8CE5FC7A4F45B0D566 /* Pods-JoandiPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoandiPhone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JoandiPhone/Pods-JoandiPhone.debug.xcconfig"; sourceTree = "<group>"; };
 		980458F61E2E592B00160645 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		980502601E311541000C2E9E /* logout-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logout-512.png"; sourceTree = "<group>"; };
 		980DCEDD1E3171BA0012BE4D /* joandi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joandi.png; sourceTree = "<group>"; };
 		980E8BE51E2FF05500ECB77D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		980E8BE71E2FF54000ECB77D /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 			children = (
 				980DCEDD1E3171BA0012BE4D /* joandi.png */,
 				9820670A1E311EAF00FC8732 /* Add_to_Cart-512.png */,
-				980502601E311541000C2E9E /* logout-512.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -291,7 +288,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				98A823EA1E2E5BB500C79210 /* main.storyboard in Resources */,
-				980502611E311541000C2E9E /* logout-512.png in Resources */,
 				A86035D41DF839DF00579CC0 /* LaunchScreen.storyboard in Resources */,
 				A86035D11DF839DF00579CC0 /* Assets.xcassets in Resources */,
 				98C78F061E16B8FA004A0688 /* Properties.plist in Resources */,

@@ -16,9 +16,6 @@ class LoginViewController: UIViewController{
 
     override func viewDidLoad()
     {
-        /*TESTING*/
-        /*UserDefaults.standard.removeObject(forKey: "token")
-        UserDefaults.standard.removeObject(forKey: "id")*/
         /*IF USER IS LOGGED IN STAY LOGGED IN*/
         if (UserDefaults.standard.value(forKey: "token") as? NSString) != nil{
             self.performSegue(withIdentifier: "shopView", sender: self)
@@ -31,7 +28,7 @@ class LoginViewController: UIViewController{
         
         /*VALIDATION*/
         if(email.isEmpty || password.isEmpty){
-            displayAlert(msg: "Fill in all fields!")
+            displayAlert(msg: "Vul alle velden in!")
             return
         }
         
