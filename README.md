@@ -22,3 +22,7 @@
 7. ~~Design~~
 	* ~~TableCell alignment~~
 	* ~~add Logo~~
+
+
+Video's show the working program on iPhone 7 & resized on iPhone 5.
+FLV format so VLC mediaplayer is advised
