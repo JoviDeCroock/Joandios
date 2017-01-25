@@ -14,6 +14,11 @@ class LoginViewController: UIViewController{
     @IBOutlet weak var passwordUser: UITextField!
     @IBOutlet weak var emailuser: UITextField!
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
     override func viewDidLoad()
     {
         /*IF USER IS LOGGED IN STAY LOGGED IN*/
