@@ -464,8 +464,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paswoord:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBO-c9-Q75">
-                                <rect key="frame" x="19" y="230" width="160" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="Paswoord:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBO-c9-Q75">
+                                <rect key="frame" x="19" y="230" width="179" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -501,12 +501,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Herhaal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LD4-fi-paS">
-                                <rect key="frame" x="104.99999999999999" y="270" width="59.666666666666643" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="joandi.png" translatesAutoresizingMaskIntoConstraints="NO" id="q1T-xA-GhD">
                                 <rect key="frame" x="61" y="28" width="292" height="120"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
@@ -525,6 +519,12 @@
                                     <action selector="registerTapped:" destination="sbj-bd-dgn" eventType="touchUpInside" id="7Fk-cj-tix"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Herhaal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LD4-fi-paS">
+                                <rect key="frame" x="19" y="264" width="145.66666666666666" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.21960784310000001" green="0.20000000000000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -545,10 +545,11 @@
                             <constraint firstItem="NIG-8U-9Zd" firstAttribute="centerX" secondItem="LXT-iq-Pnm" secondAttribute="centerX" id="XPT-WS-Z3u"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HLY-3m-9CW" secondAttribute="trailing" constant="1" id="ZIY-K4-RrP"/>
                             <constraint firstItem="NIG-8U-9Zd" firstAttribute="top" secondItem="YRq-WX-cfF" secondAttribute="bottom" constant="279" id="eZM-kP-gS5"/>
-                            <constraint firstItem="LD4-fi-paS" firstAttribute="top" secondItem="bBO-c9-Q75" secondAttribute="bottom" constant="19" id="fO1-Fx-B9W"/>
-                            <constraint firstItem="LD4-fi-paS" firstAttribute="trailing" secondItem="bBO-c9-Q75" secondAttribute="trailing" constant="-14.5" id="hKC-Zd-N6N"/>
+                            <constraint firstItem="LD4-fi-paS" firstAttribute="top" secondItem="bBO-c9-Q75" secondAttribute="bottom" constant="13" id="fO1-Fx-B9W"/>
+                            <constraint firstItem="LD4-fi-paS" firstAttribute="trailing" secondItem="bBO-c9-Q75" secondAttribute="trailing" constant="-33.5" id="hKC-Zd-N6N"/>
                             <constraint firstItem="HLY-3m-9CW" firstAttribute="top" secondItem="n5L-fN-v3A" secondAttribute="bottom" constant="8" id="kaU-nf-092"/>
                             <constraint firstItem="ufR-I4-DCi" firstAttribute="baseline" secondItem="n5L-fN-v3A" secondAttribute="baseline" id="kyW-MX-swt"/>
+                            <constraint firstItem="LD4-fi-paS" firstAttribute="leading" secondItem="LXT-iq-Pnm" secondAttribute="leadingMargin" constant="-1" id="t94-d9-zvg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oEV-Sp-uQV" secondAttribute="trailing" constant="1" id="u6X-Bl-Be0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="n5L-fN-v3A" secondAttribute="trailing" constant="1" id="wUR-nF-d4i"/>
                             <constraint firstItem="oEV-Sp-uQV" firstAttribute="width" secondItem="HLY-3m-9CW" secondAttribute="width" id="wVf-1N-7mG"/>
